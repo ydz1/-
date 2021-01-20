@@ -1,0 +1,6 @@
+<!--components/useTitle/useTitle.wxml-->
+<text class="recommendSong">{{title}}</text>
+<view class="recommendHeader">
+    <text class="title">{{description}}</text>
+    <text class="more">查看更多</text>
+</view>

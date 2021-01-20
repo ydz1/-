@@ -1,0 +1,20 @@
+/* components/useTitle/useTitle.wxss */
+/*歌曲推荐头部区域*/
+.recommendHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.recommendHeader .title{
+    margin-top:20rpx;
+    font-size:32rpx;
+}
+.recommendHeader .more{
+    margin-top:20rpx;
+    font-size: 32rpx;
+    border:1rpx solid #666;
+    border-radius: 15rpx;
+}
+.recommendSong{
+    font-size: 25rpx;
+    color:#666
+}

@@ -1,0 +1,64 @@
+<!--pages/index/index.wxml-->
+
+<!--轮播图区域-->
+<view class="bannerContainer">
+  <swiper class="banner" indicator-dots indicator-active-color="#d43c33" circular indicator-color="white">
+    <swiper-item wx:for="{{bannerArray}}" wx:key="bannerId">
+      <image src="{{item.pic}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!--导航栏区域-->
+<view class="navConatiner">
+  <view class="navItem" bindtap="toRecommendSonglist">
+    <text class="iconfont icon-meirituijian"></text>
+    <text>每日推荐</text>
+  </view>
+  <view class="navItem">
+    <text class="iconfont icon-gedan1"></text>
+    <text>歌单</text>
+  </view>
+  <view class="navItem">
+    <text class="iconfont icon-icon-ranking"></text>
+    <text>排行榜</text>
+  </view>
+  <view class="navItem">
+    <text class="iconfont icon-diantai"></text>
+    <text>电台</text>
+  </view>
+  <view class="navItem">
+    <text class="iconfont icon-zhiboguankanliangbofangsheyingshexiangjixianxing"></text>
+    <text>直播</text>
+  </view>
+</view>
+
+<!--推荐歌曲区域-->
+<view class="recommendContainer">
+  <!--  头部区域-->
+<useTitle title="推荐歌曲" description="为您精心推荐"></useTitle>
+  <!--  主体区域-->
+  <scroll-view enable-flex class="scrollView" scroll-x>
+    <view class="scrollItem" wx:for="{{recommendArray}}" wx:key="id" wx:for-item="recommendItem">
+      <image src="{{recommendItem.picUrl}}" class="scrollImage"/>
+      <text>{{recommendItem.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<!--排行榜区域-->
+<view class="rankList">
+  <!--  头部区域-->
+  <useTitle title="排行榜" description="热歌风向标"></useTitle>
+  <!--  主体区域-->
+  <swiper class="rankListSwiper" circular next-margin="50rpx">
+    <swiper-item class="rankListSwiperItem" wx:for="{{rankListArray}}" wx:key="name">
+      <view class="title">{{item.name}}</view>
+      <view class="rankListSongItem" wx:for="{{item.rankArray}}" wx:key="id" wx:for-item="subItem">
+        <image src="{{subItem.al.picUrl}}"></image>
+        <text class="count">{{index+1}}</text>
+        <text class="songName">{{subItem.name}}</text>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,100 @@
+/* pages/video/video.wxss */
+.videoContainer > .title {
+    display: flex;
+    align-items: center;
+    padding: 15rpx;
+}
+.videoContainer > .title > image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.videoContainer > .title > .search{
+    border: 2rpx solid #eee;
+    border-radius: 5rpx;
+    flex:1;
+    margin: 0 20rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color:#d43c33
+}
+/*导航区域*/
+.navScroll{
+    display: flex;
+    white-space: nowrap;
+    height:50rpx;
+}
+.navScroll .navItem {
+    padding:0 28rpx;
+}
+.navScroll .navItem .active{
+    border-bottom: 1rpx solid #d43c33;
+}
+/*视频播放*/
+.videoScroll {
+    padding: 20rpx;
+    height: calc(100vh - 142rpx)
+}
+.videoScroll .videoItem {
+    width: 100%;
+}
+.videoScroll .videoItem video, .videoScroll .videoItem .imageItem {
+    width: 94%;
+    border-radius: 20rpx;
+    height:360rpx
+}
+
+.videoItem .content {
+    font-size: 26rpx;
+    height:80rpx;
+    line-height: 80rpx;
+    max-width: 500rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+    border-top: 1rpx solid #eee;
+    padding: 20rpx 0;
+}
+.footer .avatar {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.footer  .nickName {
+    font-size: 26rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+    float: right;
+}
+
+.comments_praised .btn {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 20rpx;
+}
+
+.comments_praised .btn:after {
+    border: none;
+}
+
+.comments_praised .item {
+    margin-left: 50rpx;
+    position: relative;
+}
+
+.comments_praised .item .count {
+    position: absolute;
+    top: -20rpx;
+    font-size: 20rpx;
+}

@@ -1,0 +1,129 @@
+/* pages/search/search.wxss */
+/*搜索页头部区域*/
+.searchHeader{
+    width: 100%;
+    height:60rpx;
+    padding: 10rpx;
+    display: flex;
+}
+.inputContainer {
+    flex:1;
+    position: relative;
+}
+.inputContainer .clear {
+    position: absolute;
+    font-size: 30rpx;
+    top:15rpx;
+    right: 20rpx;
+    z-index:10;
+}
+.inputContainer input{
+    height: 60rpx;
+    line-height: 60rpx;
+    background-color: rgba(237,237,237,0.4);
+    border-radius: 30rpx;
+    padding-left:60rpx
+}
+.searchIcon{
+    position: absolute;
+    font-size:40rpx;
+    height:60rpx;
+    line-height: 60rpx;
+    top:0;
+    left: 0;
+}
+.cancel{
+    width: 100rpx;
+    height:60rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.placeholder{
+    color:#d43c33;
+}
+/*搜索页排行榜区域*/
+.hotSearch{
+    padding: 0 20rpx;
+}
+.hotSearchTitle {
+    height: 100rpx;
+    line-height: 100rpx;
+    border-bottom: 1rpx solid #d43c33;
+}
+.hotSearchList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.searchItem{
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height:60rpx;
+    line-height: 60rpx;
+}
+.order{
+    margin:0 10rpx;
+}
+.iconimage{
+    width: 30rpx;
+    height: 25rpx;
+}
+
+/*搜索相关条数区域*/
+.searchContainer{
+    padding: 10rpx;
+}
+.searchListTitle{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size:25rpx;
+    color:rgba(0,0,0,0.5);
+    border-bottom: 1px solid #d43c33;
+}
+.searchListContainer{
+    width: 100%;
+}
+
+.searchListItem{
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.searchListItem .searchList {
+    flex:1;
+    border-bottom:1px solid #eeeeee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*搜索历史区域*/
+
+.historyContainer{
+    padding:20rpx;
+    display: flex;
+    flex-wrap: wrap;
+    line-height:80rpx;
+    position: relative;
+}
+.historyTitle{
+    height: 80rpx;
+}
+.historyList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.historyItem {
+    line-height: 80rpx;
+    height: 80rpx;
+    margin: 20rpx;
+    font-size:25rpx;
+    background-color: #ededed;
+    padding: 0 20rpx;
+    border-radius: 20rpx;
+}
+.delete{
+    position: absolute;
+    bottom: 30rpx;
+    right: 30rpx;
+}
